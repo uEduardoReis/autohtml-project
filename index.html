@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebrae RS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="#" class="site-logo" aria-label="Página inicial Sebrae RS">
+                <img class="conhe-a-a-plataforma-oficial-de-produtos-do-sebrae-rs" src="img/conhe-a-a-plataforma-oficial-de-produtos-do-sebrae-rs0.png" alt="Logo Sebrae RS"/>
+            </a>
+
+            <div class="header-actions">
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="#" class="text-link active">Home</a></li>
+                        <li><a href="#" class="text-link">Cursos e Eventos</a></li>
+                        <li><a href="#" class="text-link">Blog</a></li>
+                        <li><a href="#" class="text-link">Fale Conosco</a></li>
+                        <li><a href="#" class="text-link">Encontre o SEBRAE</a></li>
+                    </ul>
+                </nav>
+
+                 <div class="cart-trigger">
+                    <img class="cart-icon" src="img/component-40.svg" alt="Carrinho de compras" />
+                    <div class="cart-count">0</div>
+                    <div class="cart-popup">
+                        <p class="text-small">Nenhum produto no seu carrinho.</p>
+                    </div>
+                </div>
+
+                <div class="header-buttons">
+                    <button class="btn btn--outline">Login</button>
+                    <button class="btn btn--primary">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="heading-1">Apoio pra todas as fases do teu<br />negócio</h1>
+                    <p class="subtitle text-white mb-medium">Cursos, consultorias, e-books e muito conteúdo pra apoiar a tua jornada, não importa<br />o desafio.</p>
+                    <form class="search-form">
+                         <div class="input-group">
+                              <i class="fas fa-search search-icon" aria-hidden="true"></i>
+                              <input type="search" placeholder="Busque por termo ou categoria" aria-label="Busca"/>
+                         </div>
+                         <button type="submit" class="btn btn--accent btn--uppercase">Pesquisar</button>
+                    </form>
+                </div>
+                <div class="hero-image">
+                    <img class="apoio-imagem-png" src="img/apoio-imagem-png0.png" alt="Mulher usando notebook e sorrindo" />
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section py-large">
+            <div class="container">
+                <header class="mb-large">
+                    <h2 class="heading-2">Sobre o que você quer aprender hoje?</h2>
+                    <p class="subtitle">Conheça as categorias de produtos Sebrae RS mais adquiridas.</p>
+                </header>
+                <div class="category-grid">
+                    <a href="#" class="category-card">
+                         <img class="category-card__image" src="img/mulhersorrindoenquantoutilizaumsmartphone0.png" alt="Marketing e Vendas"/>
+                         <div class="category-card__title-overlay">
+                              <h3 class="heading-3 category-card__title">Marketing e Vendas</h3>
+                         </div>
+                    </a>
+                    <a href="#" class="category-card">
+                         <img class="category-card__image" src="img/pessoasorrindoenquantoutilizaumsmartphone0.png" alt="Mercado"/>
+                          <div class="category-card__title-overlay">
+                              <h3 class="heading-3 category-card__title">Mercado</h3>
+                         </div>
+                    </a>
+                     <a href="#" class="category-card">
+                         <img class="category-card__image" src="img/mulhersegurandoumacanetaenquantoolhaatentamente0.png" alt="Finanças"/>
+                          <div class="category-card__title-overlay">
+                              <h3 class="heading-3 category-card__title">Finanças</h3>
+                         </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses-section container py-medium">
+             <header class="mb-medium">
+                <h2 class="heading-2">Cursos em destaque</h2>
+                <p class="subtitle">Veja nossos cursos mais procurados e encontre o que o seu negócio precisa.</p>
+            </header>
+
+            <div class="carousel" id="coursesCarousel">
+                <div class="carousel__controls">
+                    <button class="carousel__button carousel__button--prev" aria-label="Curso anterior"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel__button carousel__button--next" aria-label="Próximo curso"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <div class="carousel__viewport">
+                    <div class="carousel__track">
+                        <div class="carousel__slide">
+                             <div class="course-card">
+                                <div class="course-card__figure">
+                                     <img class="course-card__image" src="img/planejamento-para-inovar0.png" alt="Planejamento para inovar"/>
+                                     <span class="course-card__badge">Exclusivo para Empresas</span>
+                                </div>
+                                <div class="course-card__content">
+                                    <span class="course-card__category">Estratégia</span>
+                                    <h3 class="course-card__title">Planejamento para<br/>inovar</h3>
+                                    <div class="course-card__details">
+                                        <div class="course-card__detail-item">
+                                            <img src="img/component-42.svg" alt="" />
+                                            <span>Online</span>
+                                        </div>
+                                         <div class="course-card__detail-item">
+                                            <img src="img/component-43.svg" alt="" />
+                                            <span>6h (Duração)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-card__footer">
+                                    <span class="course-card__price">Gratuito</span>
+                                    <a href="#" class="btn btn--primary">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__slide">
+                             <div class="course-card">
+                                <div class="course-card__figure">
+                                     <img class="course-card__image" src="img/planejamento-de-marketing0.png" alt="Planejamento de Marketing"/>
+                                     <span class="course-card__badge">Exclusivo para Empresas</span>
+                                </div>
+                                <div class="course-card__content">
+                                    <span class="course-card__category">Estratégia</span>
+                                    <h3 class="course-card__title">Planejamento de<br/>Marketing</h3>
+                                    <div class="course-card__details">
+                                        <div class="course-card__detail-item">
+                                            <img src="img/component-44.svg" alt="" />
+                                            <span>Online</span>
+                                        </div>
+                                         <div class="course-card__detail-item">
+                                            <img src="img/component-45.svg" alt="" />
+                                            <span>6h (Duração)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-card__footer">
+                                    <span class="course-card__price">Gratuito</span>
+                                    <a href="#" class="btn btn--primary">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="carousel__slide">
+                             <div class="course-card">
+                                <div class="course-card__figure">
+                                     <img class="course-card__image" src="img/planejamento-para-fazer-acontecer0.png" alt="Planejamento para Fazer Acontecer"/>
+                                     <span class="course-card__badge">Exclusivo para Empresas</span>
+                                </div>
+                                <div class="course-card__content">
+                                    <span class="course-card__category">Estratégia</span>
+                                    <h3 class="course-card__title">Planejamento para Fazer<br/>Acontecer</h3>
+                                    <div class="course-card__details">
+                                        <div class="course-card__detail-item">
+                                            <img src="img/component-46.svg" alt="" />
+                                            <span>Online</span>
+                                        </div>
+                                         <div class="course-card__detail-item">
+                                            <img src="img/component-47.svg" alt="" />
+                                            <span>6h (Duração)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-card__footer">
+                                    <span class="course-card__price">Gratuito</span>
+                                    <a href="#" class="btn btn--primary">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__slide">
+                             <div class="course-card">
+                                <div class="course-card__figure">
+                                     <img class="course-card__image" src="img/como-ter-ideias-criativas-e-inovar-na-pr-tica0.png" alt="Como ter ideias criativas"/>
+                                     </div>
+                                <div class="course-card__content">
+                                    <span class="course-card__category">Empreendedorismo</span>
+                                    <h3 class="course-card__title">Como ter ideias criativas<br/>e inovar na prática</h3>
+                                    <div class="course-card__details">
+                                        <div class="course-card__detail-item">
+                                            <img src="img/component-48.svg" alt="" />
+                                            <span>Online</span>
+                                        </div>
+                                         <div class="course-card__detail-item">
+                                            <img src="img/component-49.svg" alt="" />
+                                            <span>1h (Duração)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-card__footer">
+                                    <span class="course-card__price">Gratuito</span>
+                                    <a href="#" class="btn btn--primary">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__slide">
+                             <div class="course-card">
+                                <div class="course-card__figure">
+                                     <img class="course-card__image" src="img/planejamento-para-inovar0.png" alt="Exemplo adicional"/>
+                                     <span class="course-card__badge">Exclusivo para Empresas</span>
+                                </div>
+                                <div class="course-card__content">
+                                    <span class="course-card__category">Estratégia</span>
+                                    <h3 class="course-card__title">Outro Curso de<br/>Planejamento</h3>
+                                    <div class="course-card__details">
+                                        <div class="course-card__detail-item">
+                                            <img src="img/component-42.svg" alt="" />
+                                            <span>Online</span>
+                                        </div>
+                                         <div class="course-card__detail-item">
+                                            <img src="img/component-43.svg" alt="" />
+                                            <span>5h (Duração)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-card__footer">
+                                    <span class="course-card__price">Gratuito</span>
+                                    <a href="#" class="btn btn--primary">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel__indicators">
+                    <button class="carousel__indicator active" aria-label="Slide 1"></button>
+                    <button class="carousel__indicator" aria-label="Slide 2"></button>
+                    <button class="carousel__indicator" aria-label="Slide 3"></button>
+                    <button class="carousel__indicator" aria-label="Slide 4"></button>
+                    <button class="carousel__indicator" aria-label="Slide 5"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="consultancies-section container py-medium">
+             <header class="mb-large">
+                <h2 class="heading-2">Consultorias em destaque</h2>
+            </header>
+
+            <div class="carousel" id="consultanciesCarousel">
+                <div class="carousel__controls">
+                    <button class="carousel__button carousel__button--prev" aria-label="Consultoria anterior"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel__button carousel__button--next" aria-label="Próxima consultoria"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <div class="carousel__viewport">
+                    <div class="carousel__track consultancies__track">
+                        <div class="carousel__slide">
+                             <div class="course-card">
+                                <div class="course-card__figure">
+                                     <img class="course-card__image" src="img/consultoria-online-finan-as-gest-o0.png" alt="Consultoria Finanças"/>
+                                     <span class="course-card__badge">Exclusivo para Empresas</span>
+                                     <div class="image-text-overlay">Bora<br/>organizar<br/>as finanças?</div>
+                                </div>
+                                <div class="course-card__content">
+                                    <span class="course-card__category">Finanças</span>
+                                    <h3 class="course-card__title">CONSULTORIA ONLINE -<br/>FINANÇAS - GESTÃO</h3>
+                                    <div class="course-card__details">
+                                        <div class="course-card__detail-item">
+                                            <img src="img/component-410.svg" alt="" />
+                                            <span>Online</span>
+                                        </div>
+                                         <div class="course-card__detail-item">
+                                            <img src="img/component-411.svg" alt="" />
+                                            <span>1h (Duração)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-card__footer">
+                                    <span class="course-card__price">Gratuito</span>
+                                    <a href="#" class="btn btn--primary">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__slide">
+                             <div class="course-card">
+                                <div class="course-card__figure">
+                                     <img class="course-card__image" src="img/consultoria-online-estrat-gia-gest-o0.png" alt="Consultoria Estratégia"/>
+                                      <span class="course-card__badge">Exclusivo para Empresas</span>
+                                      <div class="image-text-overlay">Estratégia<br/>certeira pro<br/>teu negócio</div>
+                                </div>
+                                <div class="course-card__content">
+                                    <span class="course-card__category">Estratégia</span>
+                                    <h3 class="course-card__title">CONSULTORIA ONLINE -<br/>ESTRATÉGIA - GESTÃO</h3>
+                                    <div class="course-card__details">
+                                        <div class="course-card__detail-item">
+                                            <img src="img/component-412.svg" alt="" />
+                                            <span>Online</span>
+                                        </div>
+                                         <div class="course-card__detail-item">
+                                            <img src="img/component-413.svg" alt="" />
+                                            <span>1h (Duração)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-card__footer">
+                                    <span class="course-card__price">Gratuito</span>
+                                    <a href="#" class="btn btn--primary">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="carousel__slide">
+                             <div class="course-card">
+                                <div class="course-card__figure">
+                                     <img class="course-card__image" src="img/consultoria-online-marketing-e-vendas-gest-o0.png" alt="Consultoria Marketing e Vendas"/>
+                                      <span class="course-card__badge">Exclusivo para Empresas</span>
+                                      <div class="image-text-overlay">Quer<br/>vender<br/>mais?</div>
+                                </div>
+                                <div class="course-card__content">
+                                    <span class="course-card__category">Marketing e Vendas</span>
+                                    <h3 class="course-card__title">CONSULTORIA ONLINE -<br/>MARKETING E VENDAS -<br/>GESTÃO</h3>
+                                    <div class="course-card__details">
+                                        <div class="course-card__detail-item">
+                                            <img src="img/component-414.svg" alt="" />
+                                            <span>Online</span>
+                                        </div>
+                                         <div class="course-card__detail-item">
+                                            <img src="img/component-415.svg" alt="" />
+                                            <span>1h (Duração)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-card__footer">
+                                    <span class="course-card__price">Gratuito</span>
+                                    <a href="#" class="btn btn--primary">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="carousel__slide">
+                            <div class="course-card">
+                               <div class="course-card__figure">
+                                    <img class="course-card__image" src="img/consultoria-online-finan-as-gest-o0.png" alt="Consultoria Finanças Exemplo"/>
+                                    <span class="course-card__badge">Exclusivo para Empresas</span>
+                                    <div class="image-text-overlay">Outra<br/>Consultoria<br/>Financeira</div>
+                               </div>
+                               <div class="course-card__content">
+                                   <span class="course-card__category">Finanças</span>
+                                   <h3 class="course-card__title">Outra Consultoria<br/>Financeira</h3>
+                                   <div class="course-card__details">
+                                       <div class="course-card__detail-item">
+                                           <img src="img/component-410.svg" alt="" />
+                                           <span>Online</span>
+                                       </div>
+                                        <div class="course-card__detail-item">
+                                           <img src="img/component-411.svg" alt="" />
+                                           <span>1h (Duração)</span>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="course-card__footer">
+                                   <span class="course-card__price">Gratuito</span>
+                                   <a href="#" class="btn btn--primary">Saiba mais</a>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                 </div>
+                 </div>
+        </section>
+
+
+        <section class="themes-section py-large">
+             <div class="container">
+                 <header class="mb-large">
+                    <h2 class="heading-2 text-white">Escolha seus Cursos ou Eventos pelo tema de interesse</h2>
+                    <p class="subtitle text-white">Aqui você confere todas as categorias de nossos produtos, assim fica fácil encontrar a solução que mais combina com a sua necessidade.</p>
+                </header>
+                <div class="themes-grid">
+                    <a href="#" class="theme-card">
+                        <img class="theme-card__icon" src="img/para-forma-o-do-educador0.png" alt="" />
+                        <h3 class="theme-card__title">Para formação do<br/>educador</h3>
+                    </a>
+                     <a href="#" class="theme-card">
+                        <img class="theme-card__icon" src="img/empreendedorismo0.png" alt="" />
+                        <h3 class="theme-card__title">Empreendedorismo</h3>
+                    </a>
+                     <a href="#" class="theme-card">
+                        <img class="theme-card__icon" src="img/estrat-gia0.png" alt="" />
+                        <h3 class="theme-card__title">Estratégia</h3>
+                    </a>
+                     <a href="#" class="theme-card">
+                        <img class="theme-card__icon" src="img/finan-as0.png" alt="" />
+                        <h3 class="theme-card__title">Finanças</h3>
+                    </a>
+                     <a href="#" class="theme-card">
+                        <img class="theme-card__icon" src="img/inova-o0.png" alt="" />
+                        <h3 class="theme-card__title">Inovação</h3>
+                    </a>
+                     <a href="#" class="theme-card">
+                        <img class="theme-card__icon" src="img/leis-e-normas0.png" alt="" />
+                        <h3 class="theme-card__title">Leis e Normas</h3>
+                    </a>
+                     <a href="#" class="theme-card">
+                        <img class="theme-card__icon" src="img/marketing-e-vendas0.png" alt="" />
+                        <h3 class="theme-card__title">Marketing e Vendas</h3>
+                    </a>
+                     <a href="#" class="theme-card">
+                        <img class="theme-card__icon" src="img/mei0.png" alt="" />
+                        <h3 class="theme-card__title">MEI</h3>
+                    </a>
+                    <a href="#" class="theme-card">
+                        <img class="theme-card__icon" src="img/mercado0.png" alt="" />
+                        <h3 class="theme-card__title">Mercado</h3>
+                    </a>
+                     <a href="#" class="theme-card">
+                        <img class="theme-card__icon" src="img/pessoas0.png" alt="" />
+                        <h3 class="theme-card__title">Pessoas</h3>
+                    </a>
+                    <a href="#" class="theme-card">
+                        <img class="theme-card__icon" src="img/processos0.png" alt="" />
+                        <h3 class="theme-card__title">Processos</h3>
+                    </a>
+                     <a href="#" class="theme-card">
+                        <img class="theme-card__icon" src="img/sebrae-t-on0.png" alt="" />
+                        <h3 class="theme-card__title">Sebrae tá on</h3>
+                    </a>
+                </div>
+             </div>
+        </section>
+
+        <section class="help-section">
+             <div class="help-image-container">
+                 <img src="img/aqui-pra-ajudar-aspect-ratio-570-720-png0.png" alt="Mulher sorrindo e apontando"/>
+             </div>
+             <div class="help-content">
+                 <h2 class="heading-2" style="text-align: left;">Estamos aqui para te ajudar, não<br/>importa o desafio.</h2>
+                 <p class="subtitle mb-medium" style="text-align: left;">Ficou com alguma dúvida? Chame a nossa equipe!</p>
+                 <div class="help-grid">
+                     <div class="help-card-wrapper">
+                         <a href="#" class="help-card">
+                             <div class="help-card__icon-wrapper">
+                                 <img class="help-card__icon" src="img/symbols0.svg" alt=""/>
+                             </div>
+                             <div class="help-card__text-wrapper">
+                                 <h3 class="help-card__title">Precisa de ajuda?</h3>
+                                 <p class="help-card__subtitle">Fale com a gente</p>
+                             </div>
+                         </a>
+                     </div>
+                     <div class="help-card-wrapper">
+                          <a href="#" class="help-card">
+                             <div class="help-card__icon-wrapper">
+                                 <img class="help-card__icon" src="img/symbols1.svg" alt=""/>
+                             </div>
+                             <div class="help-card__text-wrapper">
+                                 <h3 class="help-card__title">Consultorias</h3>
+                                 <p class="help-card__subtitle">Atendimento personalizado online</p>
+                             </div>
+                         </a>
+                     </div>
+                     <div class="help-card-wrapper">
+                          <a href="#" class="help-card">
+                             <div class="help-card__icon-wrapper">
+                                 <img class="help-card__icon" src="img/symbols2.svg" alt=""/>
+                             </div>
+                             <div class="help-card__text-wrapper">
+                                 <h3 class="help-card__title">Cursos Gratuitos</h3>
+                                 <p class="help-card__subtitle">Confira o que separamos pra você</p>
+                             </div>
+                         </a>
+                     </div>
+                     <div class="help-card-wrapper">
+                          <a href="#" class="help-card">
+                             <div class="help-card__icon-wrapper">
+                                 <img class="help-card__icon" src="img/symbols3.svg" alt=""/>
+                             </div>
+                             <div class="help-card__text-wrapper">
+                                 <h3 class="help-card__title">Cursos Whatsapp</h3>
+                                 <p class="help-card__subtitle">Online, rápidos e gratuitos</p>
+                             </div>
+                         </a>
+                     </div>
+                     <div class="help-card-wrapper">
+                         <a href="#" class="help-card">
+                             <div class="help-card__icon-wrapper">
+                                 <img class="help-card__icon" src="img/symbols4.svg" alt=""/>
+                             </div>
+                             <div class="help-card__text-wrapper">
+                                 <h3 class="help-card__title">Scanner</h3>
+                                 <p class="help-card__subtitle">Diagnóstico para sua empresa</p>
+                             </div>
+                         </a>
+                     </div>
+                      <div class="help-card-wrapper">
+                         <a href="#" class="help-card">
+                             <div class="help-card__icon-wrapper">
+                                 <img class="help-card__icon" src="img/symbols5.svg" alt=""/>
+                             </div>
+                             <div class="help-card__text-wrapper">
+                                 <h3 class="help-card__title">Self Scanner</h3>
+                                 <p class="help-card__subtitle">Autodiagnóstico</p>
+                             </div>
+                         </a>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+        <section class="portal-section">
+            <div class="container">
+                <h2 class="heading-2 text-white">Portal de Negócios</h2>
+                <p class="mb-medium">O Portal de Negócios é uma nova forma de aproximar pequenas, médias e grandes empresas. Aqui<br/>os usuários terão autonomia e agilidade para, a qualquer momento e em qualquer lugar, buscar<br/>clientes, fornecedores e parceiros</p>
+                <a href="#" class="btn btn--accent btn--uppercase">CLIQUE AQUI</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                 <div class="footer-column">
+                     <h3 class="footer-title">Conteúdos Sebrae RS</h3>
+                     <ul class="footer-links">
+                         <li><a href="#">Blog</a></li>
+                         <li><a href="#">Cursos</a></li>
+                         <li><a href="#">Eventos</a></li>
+                         <li><a href="#">Consultorias</a></li>
+                     </ul>
+                 </div>
+                 <div class="footer-column">
+                     <h3 class="footer-title">Atendimento</h3>
+                      <ul class="footer-links">
+                         <li><a href="#">Encontre o SEBRAE</a></li>
+                         <li><a href="#">Ouvidoria</a></li>
+                         <li><a href="#">Política de Privacidade</a></li>
+                         <li><a href="#">Contrato de prestação de serviço</a></li>
+                     </ul>
+                 </div>
+                  <div class="footer-column">
+                     <h3 class="footer-title">Institucional</h3>
+                      <ul class="footer-links">
+                         <li><a href="#">Quem Somos</a></li>
+                         <li><a href="#">Estrutura Organizacional</a></li>
+                         <li><a href="#">Atuação</a></li>
+                         <li><a href="#">Transparência</a></li>
+                         <li><a href="#">Trabalhe Conosco</a></li>
+                     </ul>
+                 </div>
+                 <div class="footer-column">
+                      <h3 class="footer-title">Siga o SEBRAE RS</h3>
+                      <div class="social-links">
+                          <a href="#" class="social-link" aria-label="Facebook"><img src="img/group0.svg" alt="Facebook"/></a>
+                          <a href="#" class="social-link" aria-label="LinkedIn"><img src="img/group1.svg" alt="LinkedIn"/></a>
+                          <a href="#" class="social-link" aria-label="YouTube"><img src="img/group2.svg" alt="YouTube"/></a>
+                          <a href="#" class="social-link" aria-label="Instagram"><img src="img/group3.svg" alt="Instagram"/></a>
+                      </div>
+                      <div class="social-links">
+                          <a href="tel:08005700800" class="social-link" aria-label="Telefone"><img src="img/group4.svg" alt="Telefone"/></a>
+                          <a href="https://wa.me/5132165000" target="_blank" class="social-link" aria-label="Whatsapp"><img src="img/group5.svg" alt="Whatsapp"/></a>
+                          <a href="mailto:exemplo@sebraers.com.br" class="social-link" aria-label="Email"><img src="img/group6.svg" alt="Email"/></a>
+                      </div>
+                      <h3 class="footer-title footer-title--contact">Você também pode nos ligar</h3>
+                      <div class="footer-contact-info">
+                            <p>0800 570 0800</p>
+                            <p>Whatsapp: (51) 3216-5000</p>
+                      </div>
+                 </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+             <div class="container row justify-between align-center">
+                 <span class="footer-copyright">SEBRAE RS © Copyright 2025 - Todos os direitos reservados</span>
+                 <div class="footer-credits">
+                     <span>Desenvolvido por</span>
+                     <a href="#"><img src="img/group7.svg" alt="Logo Desenvolvedor"/></a>
+                 </div>
+             </div>
+        </div>
+    </footer>
+
+    <a href="#" class="chat-widget-placeholder" aria-label="Abrir chat">
+         <img src="img/component-416.svg" alt="Ícone de chat" />
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
