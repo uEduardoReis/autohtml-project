@@ -412,11 +412,20 @@ body.dark-theme .site-header {
   background: linear-gradient(90deg, #111827 0%, #1f2937 100%);
   border-bottom-color: #1f2937;
 }
+body.dark-theme .header-nav a {
+  color: var(--muted);
+}
+body.dark-theme .header-nav a.active {
+  color: var(--dark);
+}
+
 body.dark-theme .site-footer {
   background: #111827;
   border-top-color: #1f2937;
   color: var(--muted);
+  --glass: rgba(255, 255, 255, 0.08); /* para manter o efeito de transparência suave */
 }
+
 body.dark-theme .footer-links a {
   color: var(--muted);
 }
@@ -455,3 +464,48 @@ body.dark-theme .carousel__indicator.active {
 .theme-toggle:hover {
   transform: scale(1.1);
 }
+
+
+/* carrinho no modo escuro */
+/* cards e seções */
+body.dark-theme .course-card,
+body.dark-theme .help-card,
+body.dark-theme .theme-card {
+  background: var(--card-bg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-theme .cart-popup {
+  background: var(--card-bg);
+  border-color: #2d3344;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-theme .cart-popup .cart-item-list li {
+  border-bottom-color: #2d3344;
+}
+
+body.dark-theme .cart-popup .btn-remove-item {
+  color: #ff6b6b; /* vermelho mais visível sobre o fundo escuro */
+}
+
+
+ /* indicadores do carrossel */
+body.dark-theme .carousel__indicator {
+  background: #374151;
+}
+body.dark-theme .carousel__indicator.active {
+  background: var(--primary);
+}
+
+/* controles do carrossel no modo escuro */
+body.dark-theme .carousel__button {
+  background: #1e2535;
+  border-color: #2d3344;
+  color: var(--dark);
+}
+body.dark-theme .carousel__button:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
