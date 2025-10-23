@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // make track draggable (desktop / touch) — swipe moves one page
     let pointerDown = false, startX = 0, currentTranslate = 0;
     track.addEventListener('pointerdown', function(e){
+      if (e.target.closest('a, button')) return;
       pointerDown = true;
       startX = e.clientX;
       currentTranslate = -currentPage * slidesPerPage * slideWidth;
