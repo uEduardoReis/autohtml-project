@@ -378,3 +378,80 @@ body{
   .hero-image img{max-width:100%}
   .footer-top{grid-template-columns:1fr}
 }
+
+
+/* ====================== */
+/*        DARK THEME      */
+/* ====================== */
+body.dark-theme {
+  --bg: #0b1220;            /* fundo principal mais escuro */
+  --card-bg: #1a1f2e;       /* fundo dos cards e seções */
+  --dark: #f1f5f9;          /* cor principal do texto */
+  --muted: #9ca3af;         /* texto secundário mais claro */
+  --accent: #ff7a4a;        /* mantém o laranja de destaque */
+  --primary: #3b5bff;       /* azul um pouco mais vibrante para contraste */
+
+  background: var(--bg);
+  color: var(--dark);
+}
+
+/* botões e links no modo escuro */
+body.dark-theme .btn--outline {
+  border-color: #374151;
+  color: var(--dark);
+}
+body.dark-theme .btn--primary {
+  background: var(--primary);
+}
+body.dark-theme .btn--accent {
+  background: var(--accent);
+}
+
+/* cabeçalho e rodapé */
+body.dark-theme .site-header {
+  background: linear-gradient(90deg, #111827 0%, #1f2937 100%);
+  border-bottom-color: #1f2937;
+}
+body.dark-theme .site-footer {
+  background: #111827;
+  border-top-color: #1f2937;
+  color: var(--muted);
+}
+body.dark-theme .footer-links a {
+  color: var(--muted);
+}
+
+/* cards e seções */
+body.dark-theme .course-card,
+body.dark-theme .help-card,
+body.dark-theme .theme-card {
+  background: var(--card-bg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ícones e menus */
+body.dark-theme .search-icon {
+  color: rgba(255, 255, 255, 0.4);
+}
+body.dark-theme input[type="search"] {
+  background: #1e2535;
+  color: var(--dark);
+}
+
+/* indicadores do carrossel */
+body.dark-theme .carousel__indicator {
+  background: #374151;
+}
+body.dark-theme .carousel__indicator.active {
+  background: var(--primary);
+}
+
+/* botão de troca de tema */
+.theme-toggle {
+  font-size: 18px;
+  padding: 8px 10px;
+  transition: 0.3s;
+}
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
