@@ -15,8 +15,9 @@
 <body>
     <header class="site-header">
         <div class="container">
-            <a href="#" class="site-logo" aria-label="Página inicial Sebrae RS">
-                <img class="conhe-a-a-plataforma-oficial-de-produtos-do-sebrae-rs" src="img/conhe-a-a-plataforma-oficial-de-produtos-do-sebrae-rs0.png" alt="Logo Sebrae RS"/>
+            <div class="header-inner"> <a href="#" class="site-logo" aria-label="Página inicial Sebrae RS">
+                    <img class="conhe-a-a-plataforma-oficial-de-produtos-do-sebrae-rs"
+                        src="img/conhe-a-a-plataforma-oficial-de-produtos-do-sebrae-rs0.png" alt="Logo Sebrae RS" />
             </a>
 
             <div class="header-actions">
@@ -37,6 +38,7 @@
                         <p class="text-small">Nenhum produto no seu carrinho.</p>
                     </div>
                 </div>
+                </div>
 
                 <div class="header-buttons">
                     <button class="btn btn--outline">Login</button>
@@ -49,7 +51,8 @@
     <main>
         <section class="hero-section">
             <div class="container">
-                <div class="hero-content">
+                <div class="hero-inner">
+                    <div class="hero-content">
                     <h1 class="heading-1">Apoio pra todas as fases do teu<br />negócio</h1>
                     <p class="subtitle text-white mb-medium">Cursos, consultorias, e-books e muito conteúdo pra apoiar a tua jornada, não importa<br />o desafio.</p>
                     <form class="search-form">
@@ -63,6 +66,7 @@
                 <div class="hero-image">
                     <img class="apoio-imagem-png" src="img/apoio-imagem-png0.png" alt="Mulher usando notebook e sorrindo" />
                 </div>
+            </div>
             </div>
         </section>
 
@@ -101,7 +105,7 @@
                 <p class="subtitle">Veja nossos cursos mais procurados e encontre o que o seu negócio precisa.</p>
             </header>
 
-            <div class="carousel" id="coursesCarousel">
+            <div class="carousel" id="coursesCarousel" data-carousel>
                 <div class="carousel__controls">
                     <button class="carousel__button carousel__button--prev" aria-label="Curso anterior"><i class="fas fa-chevron-left"></i></button>
                     <button class="carousel__button carousel__button--next" aria-label="Próximo curso"><i class="fas fa-chevron-right"></i></button>
@@ -252,16 +256,11 @@
         </section>
 
         <section class="consultancies-section container py-medium">
-             <header class="mb-large">
+            <header class="mb-large">
                 <h2 class="heading-2">Consultorias em destaque</h2>
             </header>
 
             <div class="carousel" id="consultanciesCarousel">
-                <div class="carousel__controls">
-                    <button class="carousel__button carousel__button--prev" aria-label="Consultoria anterior"><i class="fas fa-chevron-left"></i></button>
-                    <button class="carousel__button carousel__button--next" aria-label="Próxima consultoria"><i class="fas fa-chevron-right"></i></button>
-                </div>
-
                 <div class="carousel__viewport">
                     <div class="carousel__track consultancies__track">
                         <div class="carousel__slide">
@@ -345,32 +344,6 @@
                                 </div>
                             </div>
                         </div>
-                         <div class="carousel__slide">
-                            <div class="course-card">
-                               <div class="course-card__figure">
-                                    <img class="course-card__image" src="img/consultoria-online-finan-as-gest-o0.png" alt="Consultoria Finanças Exemplo"/>
-                                    <span class="course-card__badge">Exclusivo para Empresas</span>
-                                    <div class="image-text-overlay">Outra<br/>Consultoria<br/>Financeira</div>
-                               </div>
-                               <div class="course-card__content">
-                                   <span class="course-card__category">Finanças</span>
-                                   <h3 class="course-card__title">Outra Consultoria<br/>Financeira</h3>
-                                   <div class="course-card__details">
-                                       <div class="course-card__detail-item">
-                                           <img src="img/component-410.svg" alt="" />
-                                           <span>Online</span>
-                                       </div>
-                                        <div class="course-card__detail-item">
-                                           <img src="img/component-411.svg" alt="" />
-                                           <span>1h (Duração)</span>
-                                       </div>
-                                   </div>
-                               </div>
-                               <div class="course-card__footer">
-                                   <span class="course-card__price">Gratuito</span>
-                                   <a href="#" class="btn btn--primary">Saiba mais</a>
-                               </div>
-                           </div>
                        </div>
                     </div>
                  </div>
@@ -438,7 +411,8 @@
         </section>
 
         <section class="help-section">
-             <div class="help-image-container">
+            <div class="help-inner">
+                <div class="help-image-container">
                  <img src="img/aqui-pra-ajudar-aspect-ratio-570-720-png0.png" alt="Mulher sorrindo e apontando"/>
              </div>
              <div class="help-content">
@@ -513,6 +487,7 @@
                      </div>
                  </div>
              </div>
+        </div>
         </section>
 
         <section class="portal-section">
