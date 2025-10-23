@@ -546,3 +546,6 @@ body.dark-theme .carousel__button:hover {
   color: #fff;
 }
 
+body.dark-theme .footer-bottom {
+  background: #0b1220;
+}
