@@ -301,6 +301,29 @@ body{
   padding: 0 5px;
 }
 
+#toast-notification {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  background-color: var(--dark);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#toast-notification.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
 /* help */
 .help-inner{display:grid; grid-template-columns:380px 1fr; gap:28px; align-items:center}
 .help-image-container img{width:100%; border-radius:16px}
@@ -486,7 +509,21 @@ body.dark-theme .cart-popup .cart-item-list li {
 }
 
 body.dark-theme .cart-popup .btn-remove-item {
-  color: #ff6b6b; /* vermelho mais visível sobre o fundo escuro */
+  color: #ff6b6b;
+}
+
+body.dark-theme #toast-notification {
+  background-color: var(--dark);
+  color: var(--bg);
+}
+
+/* 3. Corrige os links do menu de navegação (que estavam escuros) */
+body.dark-theme .header-nav a {
+  color: var(--muted);
+}
+
+body.dark-theme .header-nav a.active {
+  color: var(--dark);
 }
 
 
