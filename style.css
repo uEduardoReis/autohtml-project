@@ -13,7 +13,7 @@
 }
 
 *{box-sizing:border-box}
-html,body{height:100%}
+html,body{height:100%;overflow-x: hidden;}
 body{
   margin:0;
   background:var(--bg);
@@ -25,9 +25,10 @@ body{
 
 /* container */
 .container{
-  width:calc(100% - 40px);
+  width:100%;
   max-width:var(--max-width);
   margin:0 auto;
+  
 }
 
 /* header */
@@ -266,6 +267,37 @@ body{
 /* chat placeholder */
 .chat-widget-placeholder{position:fixed; right:18px; bottom:18px; display:inline-block; background:var(--primary); padding:12px; border-radius:50%; box-shadow:0 10px 30px rgba(43,69,255,0.18)}
 .chat-widget-placeholder img{height:26px}
+
+/* Scroll reveal (stagger support) */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px); /* default vertical slide */
+  transition: opacity 640ms cubic-bezier(.22,.9,.37,1), transform 640ms cubic-bezier(.22,.9,.37,1);
+  transition-delay: var(--reveal-delay, 0ms); /* per-element delay */
+  will-change: opacity, transform;
+  pointer-events: auto;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* horizontal variants (use for left → right sliding items) */
+.reveal.reveal-left  { transform: translateX(-36px); } /* slide from left */
+.reveal.reveal-right { transform: translateX(36px); }  /* slide from right */
+.reveal.is-visible.reveal-left,
+.reveal.is-visible.reveal-right { transform: none; }
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal.is-visible {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
 
 /* responsiveness */
 @media (max-width:1024px){
