@@ -13,7 +13,6 @@
 }
 
 *{box-sizing:border-box}
-html,body{height:100%}
 body{
   margin:0;
   background:var(--bg);
@@ -25,7 +24,6 @@ body{
 
 /* container */
 .container{
-  width:calc(100% - 40px);
   max-width:var(--max-width);
   margin:0 auto;
 }
@@ -63,8 +61,6 @@ body{
 .cart-trigger{position:relative; display:flex; align-items:center; gap:6px; cursor:pointer}
 .cart-icon{height:28px}
 .cart-count{position:absolute; top:-6px; right:-6px; background:var(--primary); color:#fff; font-size:12px; padding:3px 6px; border-radius:12px}
-.cart-popup{display:none; position:absolute; right:0; top:40px; background:#fff; border:1px solid #eee; padding:10px; border-radius:8px; box-shadow:0 6px 18px rgba(3,10,30,0.08); white-space:nowrap}
-.cart-trigger:focus .cart-popup, .cart-trigger:hover .cart-popup{display:block}
 
 /* buttons */
 .btn{
@@ -102,7 +98,6 @@ body{
 }
 
 /* hero image */
-.hero-image img{max-width:420px; width:100%; display:block; border-radius:16px; box-shadow: 0 20px 50px rgba(15,30,80,0.25)}
 
 /* spacing utility */
 .py-large{padding:48px 0}
@@ -112,8 +107,6 @@ body{
 
 /* category cards */
 .category-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
-.category-card{display:block; position:relative; overflow:hidden; border-radius:10px;}
-.category-card img{width:100%; height:240px; object-fit:cover; display:block}
 .category-card__title-overlay{position:absolute; left:12px; bottom:12px; background:linear-gradient(90deg,#6b46ff,#ff6b6b); padding:6px 12px; border-radius:6px}
 .category-card__title{color:#fff; margin:0; font-size:16px}
 
@@ -143,13 +136,9 @@ body{
 .course-card__price{color:#11a25a; font-weight:800}
 
 /* indicators */
-.carousel__indicators{display:flex; gap:8px; margin-top:12px}
 .carousel__indicator{width:10px; height:10px; border-radius:10px; background:#e6e9f2; border:0}
 
 /* themes */
-.themes-grid{display:grid; grid-template-columns:repeat(6,1fr); gap:12px; margin-top:18px}
-.theme-card{display:flex; gap:10px; align-items:center; flex-direction:column; text-decoration:none; padding:14px; border-radius:12px; background:linear-gradient(180deg,#ffffff,#f7f8ff); text-align:center}
-.theme-card__icon{height:52px}
 .theme-card__title{margin:8px 0 0; font-size:14px}
 
 /* help */
