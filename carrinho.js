@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartPopup = document.querySelector('.cart-popup');
     const cartTrigger = document.querySelector('.cart-trigger');
 
+    let toastTimer;
+
     cartTrigger.addEventListener('click', (e) => {
         if (e.target.classList.contains('btn-remove-item')) {
             return;
@@ -29,12 +31,16 @@ document.addEventListener('DOMContentLoaded', () => {
             cart.push(title);
             updateCart();
             cartTrigger.classList.add('is-open');
+            showToast('Item adicionado ao carrinho!');
         });
     });
 
     cartPopup.addEventListener('click', (e) => {
         if (e.target.classList.contains('btn-remove-item')) {
             e.preventDefault();
+
+            e.stopPropagation();
+
             const indexToRemove = parseInt(e.target.dataset.index, 10);
             cart.splice(indexToRemove, 1);
             updateCart();
@@ -57,6 +63,18 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             cartPopup.innerHTML = `<p class="text-small">Nenhum produto no seu carrinho.</p>`;
         }
+    }
+
+    function showToast(message) {
+        const toast = document.getElementById('toast-notification');
+        if (!toast) return;
+        clearTimeout(toastTimer);
+
+        toast.textContent = message;
+        toast.classList.add('active');
+        toastTimer = setTimeout(() => {
+            toast.classList.remove('active');
+        }, 3000);
     }
 
 });
